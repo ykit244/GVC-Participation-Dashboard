@@ -1,0 +1,410 @@
+/* ============================================================================
+   GVC Dashboard - Professional Blue Theme Styles
+   ============================================================================ */
+
+/* Import professional font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Global font styling */
+body, .sidebar-menu, .main-header, .content-wrapper, .box {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif !important;
+}
+
+/* ===== COLOR PALETTE ===== */
+/* Based on #0052CC monochromatic blue */
+:root {
+  --navy-blue: #172B4D;
+  --dark-blue: #0747A6;
+  --primary-blue: #0052CC;
+  --medium-blue: #0065FF;
+  --light-blue: #DEEBFF;
+  --pale-blue: #F4F5F7;
+  --white: #FFFFFF;
+  --text-primary: #172B4D;
+  --text-secondary: #5E6C84;
+  --border: #DFE1E6;
+  --success-green: #00875A;
+  --warning-red: #DE350B;
+}
+
+/* ===== HEADER ===== */
+.skin-blue .main-header .logo {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  border-bottom: none;
+}
+
+.skin-blue .main-header .logo:hover {
+  background-color: var(--navy-blue);
+}
+
+.skin-blue .main-header .navbar {
+  background-color: var(--dark-blue);
+  border-bottom: none;
+}
+
+/* ===== SIDEBAR ===== */
+.skin-blue .main-sidebar {
+  background-color: var(--pale-blue);
+  border-right: 1px solid var(--border);
+}
+
+.skin-blue .sidebar-menu > li > a {
+  color: var(--text-secondary);
+  font-weight: 500;
+  border-left: 5px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.skin-blue .sidebar-menu > li.active > a {
+  background-color: var(--white);
+  color: var(--text-primary);
+  border-left-color: var(--primary-blue);
+  font-weight: 600;
+}
+
+.skin-blue .sidebar-menu > li:hover > a {
+  background-color: var(--white);
+  color: var(--text-primary);
+}
+
+/* ===== MAIN CONTENT ===== */
+.content-wrapper {
+  background-color: var(--white);
+}
+
+.content {
+  padding: 20px;
+}
+
+/* Page title */
+h2.page-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+
+/* ===== VALUE BOXES (Summary Cards) ===== */
+.small-box {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  background-color: var(--pale-blue);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--primary-blue);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.small-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,82,204,0.15);
+}
+
+.small-box h3 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 10px 0 0 0;
+  color: var(--primary-blue);
+}
+
+.small-box p {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.small-box .icon-large {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+.small-box .icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.small-box .icon i {
+  font-size: 60px;
+  color: rgba(255, 255, 255, 0.15);
+}
+
+/* Info icon badge for clickable cards */
+.info-icon-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: rgba(0, 82, 204, 0.9);
+  color: white;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  z-index: 10;
+  transition: background-color 0.2s ease;
+}
+
+.clickable-card {
+  cursor: pointer;
+}
+
+.clickable-card:hover .info-icon-badge {
+  background-color: var(--dark-blue);
+}
+
+/* Different blue shades for different cards */
+.small-box.bg-blue h3 {
+  color: var(--primary-blue);
+}
+
+.small-box.bg-aqua h3 {
+  color: var(--medium-blue);
+}
+
+.small-box.bg-navy h3 {
+  color: var(--dark-blue);
+}
+
+.small-box.bg-light-blue h3 {
+  color: var(--navy-blue);
+}
+
+/* Override default background colors */
+.bg-blue, .bg-aqua, .bg-navy, .bg-light-blue {
+  background-color: var(--pale-blue) !important;
+}
+
+/* ===== BOXES ===== */
+.box {
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  border: 1px solid var(--border);
+  margin-bottom: 20px;
+}
+
+.box-header {
+  border-radius: 4px 4px 0 0;
+  padding: 12px 15px;
+}
+
+.box.box-solid.box-primary > .box-header {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+.box.box-solid.box-info > .box-header {
+  background-color: var(--primary-blue);
+  color: var(--white);
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 12px;
+}
+
+.box-title {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* ===== FORM INPUTS ===== */
+.form-control, .selectize-input {
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  padding: 8px 12px;
+  color: var(--text-primary);
+  transition: border-color 0.2s ease;
+}
+
+.form-control:focus, .selectize-input.focus {
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.1);
+}
+
+.selectize-dropdown {
+  border: 2px solid var(--primary-blue);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* ===== BUTTONS ===== */
+.btn {
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 13px;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.btn-warning {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.btn-warning:hover {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(0,82,204,0.3);
+}
+
+/* ===== DATA TABLE ===== */
+.dataTables_wrapper {
+  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+table.dataTable {
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table.dataTable thead th {
+  background-color: var(--light-blue);
+  color: var(--text-primary);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  padding: 12px 8px;
+  border-bottom: 2px solid var(--primary-blue);
+}
+
+table.dataTable tbody td {
+  padding: 12px 8px;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+table.dataTable tbody tr {
+  transition: background-color 0.15s ease;
+}
+
+table.dataTable tbody tr:nth-child(even) {
+  background-color: #FAFBFC;
+}
+
+table.dataTable tbody tr:hover {
+  background-color: var(--light-blue);
+}
+
+/* DataTables filter inputs */
+.dataTables_wrapper .dataTables_filter input {
+  border: 2px solid var(--border);
+  border-radius: 4px;
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.dataTables_wrapper .dataTables_filter input:focus {
+  border-color: var(--primary-blue);
+  outline: none;
+}
+
+/* DataTables pagination */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: var(--primary-blue) !important;
+  color: white !important;
+  border: 1px solid var(--primary-blue) !important;
+  border-radius: 4px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+  background: var(--light-blue) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-blue {
+  color: var(--primary-blue);
+}
+
+.bg-light-blue {
+  background-color: var(--light-blue);
+}
+
+/* ===== TOOLTIP ICONS ===== */
+.tooltip-icon {
+  color: var(--dark-blue);
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.tooltip-icon:hover {
+  color: var(--navy-blue);
+  transform: scale(1.1);
+}
+
+/* ===== MODAL CUSTOMIZATION ===== */
+.modal-content {
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.modal-header {
+  border-radius: 8px 8px 0 0;
+  border-bottom: none;
+  padding: 20px 25px;
+}
+
+.modal-body {
+  padding: 25px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.modal-footer {
+  border-top: 1px solid var(--border);
+  padding: 15px 25px;
+}
+
+.modal-footer .btn-primary {
+  background-color: var(--primary-blue);
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+.modal-footer .btn-primary:hover {
+  background-color: var(--dark-blue);
+}
+
+/* ===== RESPONSIVE ADJUSTMENTS ===== */
+@media (max-width: 768px) {
+  .content {
+    padding: 10px;
+  }
+  
+  h2.page-title {
+    font-size: 20px;
+  }
+}
