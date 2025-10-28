@@ -69,7 +69,12 @@ shiny::runApp()
 
 ## Credits
 
-Dashboard developed for GVC research analysis. Data source: OECD. 2023. “Inter-Country Input-Output Tables.” Data set. OECD. https://www.oecd.org/en/data/datasets/inter-country-input-output-tables.html. 
+Dashboard developed for GVC research analysis. 
+- Data source: OECD. 2023. “Inter-Country Input-Output Tables.” Data set. OECD. https://www.oecd.org/en/data/datasets/inter-country-input-output-tables.html. 
+- Borin, Alessandro, and Michele Mancini. 2023. “Measuring What Matters in Value-added Trade.” Economic Systems Research 35 (4): 586–613. https://doi.org/10.1080/09535314.2022.2153221
+- NG, Wai Kit. Production Fragmentation in Manufacturing and Its Differential Impact on High- and Low-Income Economies . Praha, 2025. 97 s. Master’s thesis (Mgr). Charles University, Faculty of Social Sciences, Institute of Economic Studies. Supervisor Mgr. Michal Paulus. https://dspace.cuni.cz/handle/20.500.11956/201240
+- Claude Sonnet 4.5 - For the vibe coding sessions 🤖
+
 ## License
 
 This project is for research and educational purposes.
