@@ -57,7 +57,8 @@ shiny::runApp()
 ├── www/                  # Custom CSS and JavaScript
 └── Data Source/          # OECD TiVA bilateral GVC data
 ```
-The data source is not attached to the repo. Request from ykit244@gmail.com.
+**Note:**  
+> The data source is not attached to the repo. Request access via **ykit244@gmail.com**.
 
 ## Use Cases
 
